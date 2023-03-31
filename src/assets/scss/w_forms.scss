@@ -1,0 +1,37 @@
+.forms {
+    margin: 50px 0;
+}
+.forms__imgWrap{
+    position: relative;
+}
+.forms__img{
+    position: absolute;
+    max-width: 480px;
+    border-radius: 0 0 5px 0;
+}
+.forms__wrapper {
+    background-color: $colorMain;
+    border-radius: 5px;
+    padding: 60px 60px 60px 160px;
+}
+.forms__box {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+}
+.forms__title {
+    @include h2Title;
+    color: #fff;
+}
+.forms__button {
+    background-color: #222;
+    color: #fff;
+    padding: 17px 30px !important;
+    width: 100%;
+    border-radius: 6px;
+    transition: .4s;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}
