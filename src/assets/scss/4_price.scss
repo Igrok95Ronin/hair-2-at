@@ -65,10 +65,11 @@
 .price__name {
     line-height: 1.2;
     font-weight: 700;
-    font-size: 22px;
+    font-size: clamp(19px,5vw,22px);
     margin: 0;
 }
 .price__txt {
     line-height: 1.2;
     margin: 0;
+    
 }

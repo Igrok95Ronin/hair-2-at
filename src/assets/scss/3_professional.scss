@@ -42,7 +42,7 @@
 .professional__dscr {
     line-height: 1.2;
     font-weight: 700;
-    font-size: 22px;
+    font-size: clamp(19px,5vw,22px);
     text-align: center;
     margin-bottom: 0;
 }

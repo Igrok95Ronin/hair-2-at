@@ -6,26 +6,26 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
 }
-.transfer__wrapper:nth-child(1) {
-    .transfer__inner{
-        box-shadow: 0px 0px 5px 0px #FF9A62;
-    }
-}
-.transfer__wrapper:nth-child(2) {
-    .transfer__inner{
-        box-shadow: 0px 0px 5px 0px #2875FF;
-    }
-}
-.transfer__wrapper:nth-child(3) {
-    .transfer__inner{
-        box-shadow: 0px 0px 5px 0px #54D7AF;
-    }
-}
-.transfer__wrapper:nth-child(4) {
-    .transfer__inner{
-        box-shadow: 0px 0px 5px 0px #F05D8A;
-    }
-}
+// .transfer__wrapper:nth-child(1) {
+//     .transfer__inner{
+//         box-shadow: 0px 0px 5px 0px #FF9A62;
+//     }
+// }
+// .transfer__wrapper:nth-child(2) {
+//     .transfer__inner{
+//         box-shadow: 0px 0px 5px 0px #2875FF;
+//     }
+// }
+// .transfer__wrapper:nth-child(3) {
+//     .transfer__inner{
+//         box-shadow: 0px 0px 5px 0px #54D7AF;
+//     }
+// }
+// .transfer__wrapper:nth-child(4) {
+//     .transfer__inner{
+//         box-shadow: 0px 0px 5px 0px #F05D8A;
+//     }
+// }
 .transfer__wrapper {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
