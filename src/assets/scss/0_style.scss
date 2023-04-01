@@ -34,6 +34,17 @@ $colorMain : #0959a4;
 }
 
 @mixin btn {
-    
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    background: $colorMain;
+    color: #fff;
+    padding: 15px 25px;
+    transition: .3s;
+    &:hover {
+        background-color: #03386b;
+        color: #fff;
+    }
 }
 
