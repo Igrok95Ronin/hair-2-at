@@ -1,11 +1,11 @@
 <?php
-$site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
+$site_data      = json_decode(file_get_contents('http://local.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Haartransplantation'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -31,7 +31,7 @@ $title = $text . ' ' . $city;
             <div class="row">
                 <div class="col-12 container">
                     <div class="header__box">
-                        <h1 class="header__title">Haartransplantation</h1>
+                        <h1 class="header__title"><?= $title ?></h1>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ $title = $text . ' ' . $city;
                             </div>
                             <div class="professional__inner">
                                 <div class="professional__wrapper">
-                                    <a href="#" class="professional__btn"><img class="professional__img" src="assets/img/3.png" alt="" ></a>
+                                    <a href="<?= $phone_href ?>" class="professional__btn"><img class="professional__img" src="assets/img/3.png" alt="" ></a>
                                     <img class="professional__imgCir" src="assets/img/cir.png" alt="">
                                 </div>
                                 <p class="professional__dscr">24 Stunden Hotline jetzt anrufen</p>
@@ -304,7 +304,7 @@ $title = $text . ' ' . $city;
                     <a title="Telegram" href="https://t.me/+RlCVamvJxo80N2Zii" target="_blank"><img src="assets/icons/Telegram.svg"/></a>
 
                     <div class="professional__wrapper2">
-                        <a href="#" class="professional__btn2"><img class="professional__img2" src="assets/icons/123.svg" alt="" ></a>
+                        <a href="<?= $phone_href ?>" class="professional__btn2"><img class="professional__img2" src="assets/icons/123.svg" alt="" ></a>
                         <img class="professional__imgCir2" src="assets/img/cir.png" alt="">
                     </div>
                 </div>
