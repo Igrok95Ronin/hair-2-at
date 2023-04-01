@@ -1,16 +1,16 @@
-.freeAnalysis {
+.innovative {
     margin: 50px 0;
 }
-.freeAnalysis__box {
+.innovative__box {
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-    padding: 60px 50px 60px 50px;
+    padding: 60px 50px 0px 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 100px;
 }
-.freeAnalysis__left {
+.innovative__left {
 }
-.freeAnalysis__title {
+.innovative__title {
     @include h2Title;
     color: #000;
     text-align: left;
@@ -18,20 +18,20 @@
     font-weight: 700;
     line-height: 1.3;
 }
-.freeAnalysis__txt {
+.innovative__dscr {
+    font-weight: 700;
+}
+.innovative__txt {
     line-height: 24px;
     padding-top: 10px;
 }
-.freeAnalysis__send {
-}
-.freeAnalysis__btn {
-    @include btn;
-}
-.freeAnalysis__right {
+.innovative__right {
     max-width: 100%;
     max-height: 100%;
+    padding: 0;
+    padding-bottom: 60px;
 }
-.freeAnalysis__img {
+.innovative__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
