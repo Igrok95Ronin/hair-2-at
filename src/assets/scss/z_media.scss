@@ -62,6 +62,9 @@
         padding: 20px 10px;;
         gap: 20px;
     }
+    .messageFixed {
+        padding: 0px;
+    }
 }
 @media(max-width: 500px) {
     .price__wrapper {
