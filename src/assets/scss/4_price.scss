@@ -11,6 +11,10 @@
     animation-duration: 1s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
+    span{
+        outline: auto;
+        padding: 5px 10px;
+    }
 }
 @keyframes price__dscrAnimation {
     0%{

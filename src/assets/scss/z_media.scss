@@ -8,7 +8,8 @@
     .price__box,
     .forms__box,
     .freeAnalysis__box,
-    .service__box {
+    .service__box,
+    .comments__box {
         grid-template-columns: 1fr;
     }
     .professional__inner {
@@ -85,5 +86,13 @@
     }
     .innovative__box{
         padding-top: 0;
+    }
+    .price__dscr {
+        span{
+            padding: 5px 5px;
+        }
+    }
+    .comments__inner {
+        padding: 40px 10px;
     }
 }

@@ -1,5 +1,5 @@
 <?php
-$site_data      = json_decode(file_get_contents('http://local.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
+$site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
@@ -84,7 +84,7 @@ $title = $text . ' ' . $city;
                 <div class='row'>
                     <div class='col-12 container'>
                         <h2 class="price__title">Haartransplantation</h2>
-                        <p class="price__dscr">All-Inclusive Pakete bereits ab 1990 €</p>
+                        <p class="price__dscr"><span>All-Inclusive Pakete bereits ab 1990 €</span></p>
                         <div class='price__box'>
                             <div class="price__wrapper">
                                 <div class="priceImgWrap">
@@ -193,19 +193,11 @@ $title = $text . ' ' . $city;
                                     <div id='jq_phone' style='font-weight:700;font-size:15px;color:#fff;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
                                 </div>
                                 <div class='my-4'>
-                                    <input class='form-control' placeholder='Straße' name='jq_street' type='text'>
-                                    <div id='jq_street' style='font-weight:700;font-size:15px;color:#fff;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
-                                </div>
-                                <div class='my-4'>
-                                    <input class='form-control' placeholder='Postleitzahl/Stadt' name='jq_city' type='text'>
-                                    <div id='jq_city' style='font-weight:700;font-size:15px;color:#fff;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
-                                </div>
-                                <div class='my-4'>
                                     <input class='form-control' placeholder='E-mail' name='jq_email' type='text'>
                                     <div id='jq_email' style='font-weight:700;font-size:15px;color:#fff;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
                                 </div>
                                 <div class='my-4'>
-                                    <textarea rows='3' class='form-control' name='jq_text' placeholder='Beschreibung'></textarea>
+                                    <textarea rows='5' class='form-control' name='jq_text' placeholder='Beschreibung'></textarea>
                                     <div id='jq_text' style='font-weight:700;font-size:15px;color:#fff;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
                                 </div>
                                 <div>
@@ -230,6 +222,33 @@ $title = $text . ' ' . $city;
                             </div>
                             <div class="beforeAfter__imgWrp">
                                 <img class="beforeAfter__img" src="assets/img/332.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='comments'>
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-12 container'>
+                        <h2 class="comments__title">Bewertungen</h2>
+                        <div class='comments__box'>
+                            <div class="comments__inner">
+                                <p class="comments__stars"><span></span><span></span><span></span><span></span><span></span></p>
+                                <p class="comments__message">Nachdem ich jahrelang unter Haarausfall gelitten habe, habe ich mich endlich für eine Haartransplantation bei dieser Klinik entschieden. Ich bin sehr zufrieden mit dem Ergebnis und kann die Klinik uneingeschränkt weiterempfehlen. Das gesamte Team war sehr professionell und hat mich während des gesamten Prozesses sehr gut betreut. Vielen Dank!</p>
+                                <div class="comments__imgWrap">
+                                    <img class="comments__img" src="./assets/img/11111.png" alt="" >
+                                </div>
+                                <p class="comments__name">Herr Schmidt</p>
+                            </div>
+                            <div class="comments__inner">
+                                <p class="comments__stars"><span></span><span></span><span></span><span></span><span></span></p>
+                                <p class="comments__message">Ich habe mich nach ausgiebiger Überlegung für eine Haartransplantation bei dieser Klinik entschieden und bin mit dem Ergebnis äußerst zufrieden. Die Ärzte waren sehr kompetent und haben mich ausführlich beraten. Die eigentliche Behandlung verlief schmerzfrei und das Resultat sieht absolut natürlich aus. Auch der Service und die Unterkunft im Hotel waren sehr angenehm. Ich kann diese Klinik auf jeden Fall weiterempfehlen!</p>
+                                <div class="comments__imgWrap">
+                                    <img class="comments__img" src="./assets/img/22222.png" alt="" >
+                                </div>
+                                <p class="comments__name">Herrn Richter</p>
                             </div>
                         </div>
                     </div>
